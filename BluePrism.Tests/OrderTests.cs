@@ -110,11 +110,27 @@ namespace BluePrism.Tests
 
             order.AddOrderLine(orderLine1);
 
-            order.DefaultPrice.Should().Be(18.99);
+            order.ActualPrice.Should().Be(5.00);
 
             order.AddOrderLine(orderLine2);
 
-            order.DefaultPrice.Should().Be(75.24);
+            order.ActualPrice.Should().Be(40.00);
+        }
+
+        [Test]
+        public void Oerline_With_Quantity_Greater_Than_One_Test()
+        {
+            var customer = MockCustomers.Get.FirstOrDefault(c => c.Id == 3);
+            var order = new Order(1, customer);
+
+            var product1 = MockProducts.Get.FirstOrDefault(p => p.Id == 3);
+            var product2 = MockProducts.Get.FirstOrDefault(p => p.Id == 5);
+
+            var orderLine1 = new OrderLine(1, product1, 3, 5.00);
+
+            order.AddOrderLine(orderLine1);
+
+            order.ActualPrice.Should().Be(15.00);
         }
     }
 }
