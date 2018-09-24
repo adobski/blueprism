@@ -12,21 +12,21 @@ namespace BluePrism.Domain
             OrderLines = new List<OrderLine>();
         }
 
-        public int Id { get; private set; }
-        public Customer Customer { get; private set; }
+        public int Id { get; }
+        public Customer Customer { get; }
         public OrderStatus Status { get; private set; }
-        public IList<OrderLine> OrderLines { get; private set; }
+        public IList<OrderLine> OrderLines { get; }
         public double DefaultPrice { get; private set; }
         public double ActualPrice { get; private set; }
 
-        public void AddOrderLine(OrderLine orderline)
+        public void AddOrderLine(OrderLine orderLine)
         {
-            OrderLines.Add(orderline);
+            OrderLines.Add(orderLine);
 
             Status = OrderStatus.SelectingProducts;
 
-            DefaultPrice += orderline.TotalDefaultCost;
-            ActualPrice += orderline.TotalActualCost;
+            DefaultPrice += orderLine.TotalDefaultCost;
+            ActualPrice += orderLine.TotalActualCost;
         }
 
         public void RemoveOrderLine(OrderLine orderLine)

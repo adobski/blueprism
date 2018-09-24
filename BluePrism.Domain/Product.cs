@@ -17,9 +17,9 @@ namespace BluePrism.Domain
             Price = price;
         }
 
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public double Price { get; set; }
+        public int Id { get; }
+        public string Title { get; }
+        public string Description { get; }
+        public double Price { get; }
     }
 }
