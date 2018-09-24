@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrism.Domain", "BluePrism.Domain\BluePrism.Domain.csproj", "{F853E585-7CBF-466F-A254-A0E8406884FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrism.Tests", "BluePrism.Tests\BluePrism.Tests.csproj", "{8CEDCE26-A12D-4FE6-8795-6224FCF5AED8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F853E585-7CBF-466F-A254-A0E8406884FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F853E585-7CBF-466F-A254-A0E8406884FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F853E585-7CBF-466F-A254-A0E8406884FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F853E585-7CBF-466F-A254-A0E8406884FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CEDCE26-A12D-4FE6-8795-6224FCF5AED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CEDCE26-A12D-4FE6-8795-6224FCF5AED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CEDCE26-A12D-4FE6-8795-6224FCF5AED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CEDCE26-A12D-4FE6-8795-6224FCF5AED8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A703310E-6E03-4BAC-8B68-887FE50B5F49}
+	EndGlobalSection
+EndGlobal
